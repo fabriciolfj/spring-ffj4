@@ -5,6 +5,7 @@ import org.ff4j.FF4j;
 import org.ff4j.core.Feature;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 
@@ -12,6 +13,7 @@ import static com.github.fabriciolfj.appsample.constants.Constants.FEATURE_ALTER
 
 @Getter
 @ConfigurationProperties(prefix = "toogle")
+@Configuration
 public class ConfigProperties {
 
     private boolean enabled;
